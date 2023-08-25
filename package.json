@@ -1,12 +1,12 @@
 {
-  "name": "my-package",
+  "name": "Adonis",
   "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "node ace serve --watch",
-    "build": "babel src -d lib",
+    "build": "node ace build --production",
     "start": "node build/server.js",
-    "test": "jest",
+    "test": "node ace test",
     "migrate": "node ace migration:run"
   },
   "devDependencies": {
