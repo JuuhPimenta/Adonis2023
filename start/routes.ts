@@ -24,5 +24,8 @@ Route.get('/', async () => {
   return { hello: 'world' }
 })
 
-Route.post("/registro", "AuthController.registro")
-Route.post("/login", "AuthController.login" )
+Route.post("/register", "AuthController.register")
+Route.post("/login", "AuthController.login")
+Route .group(() => {
+  Route.put("/user", "UsersContoller.update")
+}).middleware('auth');
