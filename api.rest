@@ -1,5 +1,5 @@
 ### Registrar usuário
-POST https://adonisjuuh.onrender.com/registro HTTP/1.1
+POST https://adonisjuuh.onrender.com/register HTTP/1.1
 Content-Type: application/json
 
 {
